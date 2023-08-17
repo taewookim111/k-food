@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap');
+header {
+    width: 100%;
+    .inner{
+        width: 100%;
+        height: 60px;
+        margin: 0 auto;
+        position: relative;
+        background: url(../img/수묵화.webp) repeat center/contain;
+        h1{
+            position: absolute;
+            left: 20%;
+            bottom: 25%;
+            a{
+                font: bold 24px/1 "arial";
+                color: #111;
+            }
+        }
+        .menuWeb{
+            #gnb{
+                position: absolute;
+                left: 50%;
+                bottom: 13%;
+                li{
+                    float: left;
+                    a{
+                        display: block;
+                        padding: 15px 40px;
+                        font: bold 16px/1 "Noto Serif KR";
+                        color: #111;
+                        &:hover{
+                            background-color: #444;
+                            color: #fff;
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

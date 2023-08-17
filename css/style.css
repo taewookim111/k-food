@@ -1,0 +1,117 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header {
+  width: 100%;
+}
+header .inner {
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  position: relative;
+  background: url(../img/수묵화.webp) repeat center/contain;
+}
+header .inner h1 {
+  position: absolute;
+  left: 20%;
+  bottom: 25%;
+}
+header .inner h1 a {
+  font: bold 24px/1 "arial";
+  color: #111;
+}
+header .inner .menuWeb #gnb {
+  position: absolute;
+  left: 50%;
+  bottom: 13%;
+}
+header .inner .menuWeb #gnb li {
+  float: left;
+}
+header .inner .menuWeb #gnb li a {
+  display: block;
+  padding: 15px 40px;
+  font: bold 16px/1 "Noto Serif KR";
+  color: #111;
+}
+header .inner .menuWeb #gnb li a:hover {
+  background-color: #444;
+  color: #fff;
+  opacity: 0.8;
+}
+
+#slider {
+  width: 100%;
+  height: 480px;
+  overflow: hidden;
+}
+#slider .panel {
+  width: 385%;
+  height: 100%;
+  transition: 0.6s;
+  position: relative;
+}
+#slider .panel li {
+  width: 25%;
+  height: 100%;
+  margin: 35px;
+  float: left;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#slider .panel li h2 {
+  font: bold 260px/1 "arial";
+  color: #fff;
+  position: absolute;
+  bottom: 10px;
+}
+#slider .panel li:nth-of-type(1) {
+  background-image: url(../img/김치.jpg);
+}
+#slider .panel li:nth-of-type(2) {
+  background-image: url(../img/비빔밥.webp);
+}
+#slider .panel li:nth-of-type(3) {
+  background-image: url(../img/불고기.webp);
+}
+#slider .btns {
+  position: absolute;
+  bottom: 45%;
+  left: 50%;
+}
+#slider .btns li {
+  float: left;
+  margin-right: 10px;
+}
+#slider .btns li a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #999;
+  border-radius: 50%;
+}
+#slider .btns li.on a {
+  background-color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
